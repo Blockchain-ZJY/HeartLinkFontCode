@@ -3,9 +3,9 @@
  * 使用本地IPFS节点
  */
 
-// 本地IPFS节点配置
-const IPFS_API_URL = 'http://8.137.48.231:5009/api/v0'
-const IPFS_GATEWAY_URL = 'http://8.137.48.231:5010/ipfs'
+// IPFS节点配置 - 使用自签名HTTPS证书
+const IPFS_API_URL = 'https://8.137.48.231/api/v0'    // 通过Nginx HTTPS代理
+const IPFS_GATEWAY_URL = 'https://8.137.48.231/ipfs'   // 通过Nginx HTTPS代理
 
 /**
  * 上传文件到IPFS
